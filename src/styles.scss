@@ -1,4 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+// styles.scss
+
+// Màu sắc chung
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// Font chữ chung
+$font-family: Roboto;
+
+// Class dùng chung
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+  color: white;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: $font-family;
+}
+
+.btn-primary {
+  @extend .btn;
+  background-color: $primary-color;
+  color: white;
+}
+
+.btn-secondary {
+  @extend .btn;
+  background-color: $secondary-color;
+  color: white;
+}
