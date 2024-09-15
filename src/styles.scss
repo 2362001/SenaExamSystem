@@ -4,14 +4,20 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: "PrjFont";
+  src: url("./app/assets//fonts//Roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: PrjFont;
 }
 // styles.scss
 
 // Màu sắc chung
-$primary-color: #3498db;
+$primary-color: #4A3AFF;
 $secondary-color: #2ecc71;
 
 // Font chữ chung
